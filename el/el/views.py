@@ -26,3 +26,8 @@ def link4(request):
     """The tested linked page"""
     
     return render(request, 'home.html')
+    
+def link5(request):
+	"""I'm testing the github deal I downloaded to my computer now"""
+	
+	return render(request, 'home.html')
