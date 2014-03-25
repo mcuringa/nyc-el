@@ -21,3 +21,9 @@ img.round
 {
     border-radius: 100px;
 }
+
+img:hover 
+{
+    height:100px;
+    width: 200px;
+}
