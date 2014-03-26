@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     url(r'^link3$', 'el.views.link3', ),
     url(r'^link4$', 'el.views.link4', ),
     url(r'^home$', 'el.views.link5', ),
+
 )
