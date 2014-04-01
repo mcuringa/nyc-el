@@ -1,28 +1,15 @@
-// <script type="text/javascript">
-// // Popup window code
-// function newPopup(url) {
-// 	popupWindow = window.open(
-// 		url,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-// }
-// </script>
-// <a href="JavaScript:newPopup('http://www.google.com');">This will create pop-up windows.</a>
+{% extends "base.html" %}
 
-+{% extends "base.html" %}
- +
- {% block head %}
- <h1> This is me trying to see if the "head" will come up as red.</h1>
-{% endblock %}
- +
- +{% block body %}
- +
- +<h1>This is the Home page for our El</h1>
- +<!-- add your name to this list and then commit your changes to github -->
- +<ul>
- +    <li>Christiana</li>
+{% block body %}
+ 
+ <h1>This is the Home page for our El</h1>
+ <!-- add your name to this list and then commit your changes to github -->
+ <ul>
+    <li>Christiana</li>
  	  <li>Katy</li>
  	  <li>Christian</li>
  	  <li>Prem</li>
  	  <li>Jeff</li>
- +</ul>
- +
- +{% endblock %}
+ </ul>
+
+{% endblock %}
