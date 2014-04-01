@@ -5,6 +5,11 @@ html
 	height: 90%%
 	margin: 0;
 }
+head{
+	background-color: red;
+	width: auto;
+	height: 80px;
+}
 
 body  
 {
@@ -12,11 +17,14 @@ font-family: Garamond;
 font-size: 18px;
 text-align:center;
 width: 100%
+background-color: green;
+width: 100%;
 margin: 0;
 
 }
 
 img.round
+/*img.round
 {
     border-radius: 100px;
 }
