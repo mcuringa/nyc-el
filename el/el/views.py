@@ -4,18 +4,37 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 def home(request):
     """The home page"""
+    x= 2 **16
+    context = {"math_prob": x}
         
-    return render(request, 'home.html')
+    return render(request, 'home.html', context)
 
 def link1(request):
     """The first linked page"""
+    term = "adelphi"
+    context = {}
+
+    if term == "adelphi":
+        context["city"]= "garden city"
+        context["size"]= "15,000"
+
+    else:
+        context["city"] = "??"
+        context["size"] = "-1"
     
-    return render(request, 'link1.html')
+    return render(request, 'home.html', context)
 
 def link2(request):
     """The second linked page"""
-    
-    return render(request, 'link2.html')
+
+    userput = "soccer"
+
+    sport = {"soccer": ["red bulls", "nyc fc"], "basketball": ["knicks", "nets"]}
+
+    data = {}
+    data["sport"] = sport[userput]
+
+    return render(request, 'home.html', data)
     
 def link3(request):
     """The third linked page"""
