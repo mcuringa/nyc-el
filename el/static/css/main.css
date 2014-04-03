@@ -5,10 +5,13 @@ html
 	height: 90%%;
 	margin: 0;
 }
-head{
-	background-color: red;
-	width: auto;
-	height: 80px;
+header
+{
+    background-color: #00ff00;
+    border-bottom: 3px solid black;
+    color: blue;
+    width: auto;
+    height: 80px;
 }
 
 body  
