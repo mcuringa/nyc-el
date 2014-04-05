@@ -1,66 +1,17 @@
 @font-face
 {
     font-family: "font"
-    src: url("nyc-el\el\static\fonts\Urban.otf");	
+    src: url("fonts/Urban.otf");	
 }
 
-
-html 
-
-{
-	width: 90%;
-	height: 90%%;
-	margin: 0;
-}
-header
-{
-    background-color: #cyan;
-    border-bottom: 3px solid black;
-    color: blue;
-    width: auto;
-    height: 80px;
-}
-header h1
-{
-    
-    font-size: 80px;
-    text-shadow: 1px 2px 0px Red;
-}
-
-body  
-{
+body 
+{ 
     font-family: Futura, "Ubuntu", "Gill Sans", "Century Gothic", "Trebuchet MS", sans-serif; 
     margin: 0;
     color: black;
-    background-image: url("http://www.html5canvastutorials.com/demos/assets/map-background.png"); 
+    background-image: url("http://home.adelphi.edu/~je20764/img/mj.jpg"); 
     background-repeat: repeat;
 }
-
-
-
-
-
-font-family: Garamond;
-font-size: 18px;
-text-align:center;
-
-width: auto;
-margin: 0;
-
-}
-
-/*img.round
-{
-    border-radius: 100px;
-}
-
-img:hover 
-{
-    height:100px;
-    width: 200px;
-}
-
-*/
 
 article, header h1, header h2
 {
@@ -77,10 +28,9 @@ h1
     font-weight: bold;
     font-size: 250%;
     padding-top: .25em;
-
 }
 
-a
+
 {
     color: #C02222;
     text-decoration: none;
