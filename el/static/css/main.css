@@ -40,9 +40,9 @@ h1
 
 header
 {
-    background-color: #cyan;
+   
     border-bottom: 3px solid black;
-    color: blue;
+    color: black;
 }
 
 header h1, header h2
@@ -55,7 +55,7 @@ header h1
 {
     font-family: "Urban";
     font-size: 80px;
-    text-shadow: 1px 2px 0px Red;
+   
 }
 
 header h2
