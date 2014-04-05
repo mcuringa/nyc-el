@@ -59,4 +59,114 @@ img:hover
     height:100px;
     width: 200px;
 }
+
 */
+
+article, header h1, header h2
+{
+    width: 900px;
+    margin: 0 auto;
+
+}
+div
+{
+background-color:rgba(255, 255, 255, .8)
+}
+h1
+{
+    font-weight: bold;
+    font-size: 250%;
+    padding-top: .25em;
+
+}
+
+a
+{
+    color: #C02222;
+    text-decoration: none;
+}
+
+
+
+header
+{
+    background-color: #00ff00;
+    border-bottom: 3px solid black;
+    color: blue;
+}
+
+header h1, header h2
+{
+    border-style: none;
+    text-align: center;
+}
+
+header h1
+{
+    font-family: "Dark";
+    font-size: 80px;
+    text-shadow: 1px 2px 0px Red;
+}
+
+header h2
+{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+
+#intro figure
+{
+    margin: 1em 0;
+}
+
+#intro figcaption
+{
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+}
+
+#intro p
+{
+    text-align: center;
+    font-size: 130%;
+    padding: 0 3em;
+}
+blockquote
+{
+    margin: 0;
+    
+    font-weight: bold;
+    font-size: 140%;
+    line-height: 130%;
+    padding: 2em;
+    font-family: sans-serif;
+    text-shadow: 0px 1px 4px white;
+}
+footer
+{
+    background-color: #00ff00; 
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
+footer a
+{
+    color: white;
+    text-decoration: solid black;
+}
+footer img
+{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
