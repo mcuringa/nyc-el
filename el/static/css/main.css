@@ -32,7 +32,7 @@ body
     font-family: Futura, "Ubuntu", "Gill Sans", "Century Gothic", "Trebuchet MS", sans-serif; 
     margin: 0;
     color: black;
-    background-image: url("\img\"trains.jpg"); 
+    background-image: url("http://www.html5canvastutorials.com/demos/assets/map-background.png"); 
     background-repeat: repeat;
 }
 
