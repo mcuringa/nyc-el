@@ -1,7 +1,7 @@
 @font-face
 {
-    font-family: "font"
-    src: url("fonts/Urban.otf");	
+    font-family: "Urban"
+    src: url("http://home.adelphi.edu/~je20764/fonts/Urban.otf");	
 }
 
 body 
@@ -53,7 +53,7 @@ header h1, header h2
 
 header h1
 {
-    font-family: "Dark";
+    font-family: "Urban";
     font-size: 80px;
     text-shadow: 1px 2px 0px Red;
 }
