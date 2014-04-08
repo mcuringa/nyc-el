@@ -18,7 +18,41 @@
             <h2>Some Information About Trains from Around the World</h2>
 			<h2>By Christiana, Katy, Chris, Prem, and Jeff
      </header>
- 
+	<div>
+	<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5, CSS3 and jQuery Navigation menu</title>
+        <link rel="stylesheet" href="css/nav.css">
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body class="no-js">
+        <nav id="topNav">
+                <ul>
+                    <li><a href="#" title="Nav Link 1">Nav Link 1</a></li>
+                <li>
+                    <a href="#" title="Nav Link 1">Nav Link 2
+                    <ul>  
+                        <li><a href="#" title="Sub Nav Link 1">Sub Nav Link 1</a></li>
+                        <li><a href="#" title="Sub Nav Link 2">Sub Nav Link 2</a></li>
+                        <li><a href="#" title="Sub Nav Link 3">Sub Nav Link 3</a></li>
+                        <li><a href="#" title="Sub Nav Link 4">Sub Nav Link 4</a></li>
+                        <li class="last"><a href="#" title="Sub Nav Link 5">Sub Nav Link 5</a></li>
+                    </ul>                
+                </li>
+                <li><a href="#" title="Nav Link 1">Nav Link 3</a></li>
+                <li><a href="#" title="Nav Link 1">Nav Link 4</a></li>
+                <li><a href="#" title="Nav Link 1">Nav Link 5</a></li>
+            </ul>
+        </nav>
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+    </body>
+</html>
+	</div>
  
  
  
@@ -50,78 +84,6 @@
 
 
 
- <!--  <head>
-    <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-      #tango {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        padding: 10px;
-      }
-      #container {
-        background-image: url('http://www.html5canvastutorials.com/demos/assets/map-background.png');
-        display: inline-block;
-        overflow: hidden;
-        height: 862px;
-        width: 1180px;
-        background-position: 1px 1px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container"></div>
-    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.1.min.js"></script>
-    <script src="http://www.html5canvastutorials.com/demos/assets/worldMap.js"></script>
-    <script defer="defer">
-      var stage = new Kinetic.Stage({
-        container: 'container',
-        width: 1478,
-        height: 1160
-      });
-      var mapLayer = new Kinetic.Layer({
-        y: 20,
-        scale: 0.6
-      });
-      var topLayer = new Kinetic.Layer({
-        y: 20,
-        scale: 0.6
-      });
 
-      /*
-       * loop through country data stroed in the worldMap
-       * variable defined in the worldMap.js asset
-       */
-      for(var key in worldMap.shapes) {
-        var path = new Kinetic.Path({
-          data: worldMap.shapes[key],
-          fill: '#eee',
-          stroke: '#555',
-          strokeWidth: 1
-        });
-
-        path.on('mouseover', function() {
-          this.setFill('#111');
-          this.moveTo(topLayer);
-          topLayer.drawScene();
-        }); 
-
-        path.on('mouseout', function() {
-          this.setFill('#eee');
-          this.moveTo(mapLayer);
-          topLayer.draw();
-        });
-
-        mapLayer.add(path);
-      }
-
-      stage.add(mapLayer);
-      stage.add(topLayer);
-
-    </script>
-  </body> -->
 </html>
 {% endblock %}
