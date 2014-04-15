@@ -8,7 +8,7 @@ class City(models.Model):
   square_miles = models.IntegerField(default = 0)
   square_miles_track = models.IntegerField(default = 0)
   avg_annual_riders = models.IntegerField(default = 0)
-  cost_tix = models.IntegerField (default = 0) -----find decimal
+  cost_tix = models.Float(default = 0) -----find decimal
   num_stations = models.IntegerField(default = 0)
   
 # This is a guess v ----- I don't really know what's up ---------------------
