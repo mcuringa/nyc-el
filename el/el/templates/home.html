@@ -14,15 +14,19 @@
  City of college: {{city}}<br>
 Population of College: {{size}}<br>
 
+<h4> Sports Problems </h4>
+
+<br>
+
+Soccer Teams = 
 <ul>
 {% for team in sport %}
   <li>{{ team }}</li>    
 {% endfor %}
-</ul>
+</ul><br>
 
-<br>
-
-Basketball Team = {{basketball}}
+Basketball Teams = {{basketball}}<br>
+CheckCheck = {{data}}<br> <br>
 (put in the key to display the variable)
  <ul>
     <li>Christiana</li>
@@ -33,8 +37,38 @@ Basketball Team = {{basketball}}
  	  <li> testing changes</li>
  </ul>
 
-{% endblock %}
-<!DOCTYPE HTML>
+
+
+<div id="postcard">
+	
+		<ul id="stats">
+			Postcard Box
+		<li>City: {{londonbutton.0}}</li>
+		<li>Population: {{londonbutton.1}}</li>
+		<li>Location: {{londonbutton.2}}</li>
+
+		</ul>
+	</div>
+
+</div>
+
+
+<div id="mapBox">
+
+
+</div>
+
+<form>
+<input type="radio" name="place" id="city_london" value="radio1">1. London<br>
+<input type="radio" name="place" id="city_moscow" value="radio2">2. Moscow<br>
+<input type="radio" name="place" id="city_paris" value="radio3">3. Paris <br>
+</form> 
+
+{%endblock%}
+<!--
+
+	Write in numbers for buttons below map... for links or radio buttons, find javascript for toggles/
+	
 <html>
   <head>
     <style>
@@ -109,4 +143,4 @@ Basketball Team = {{basketball}}
 
     </script>
   </body>
-</html>
+</html-->
