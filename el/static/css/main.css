@@ -3,14 +3,7 @@
     font-family: "Urban"
     src: url("/static/fonts/Urban.otf");	
 }
-#mainWrapperDivWithBGImage {
-  background: url("/static/img/MapoftheworldWhite.jpg.jpg") no-repeat scroll 0 0 transparent;
-  height: 248px;
-  margin: 0;
-  overflow: hidden;
-  padding: 3px 0 0 3px;
-  width: 996px;
-}
+
 
 body 
 { 
