@@ -36,10 +36,10 @@ def link2(request):
 
     return render(request, 'home.html', data)
     
-def link3(request):
+def tokyo(request):
     """The third linked page"""
     
-    return render(request, 'link3.html')
+    return render(request, 'tokyo.html')
     
 def link4(request):
     """The tested linked page"""
