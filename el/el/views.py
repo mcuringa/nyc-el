@@ -38,6 +38,7 @@ def link2(request):
     
 def tokyo(request):
     """The third linked page"""
+    """ Form for inputting City information"""
     
     return render(request, 'tokyo.html')
     
