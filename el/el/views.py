@@ -42,10 +42,10 @@ def tokyo(request):
     
     return render(request, 'tokyo.html')
     
-def link4(request):
+def cityForm(request):
     """The tested linked page"""
     
-    return render(request, 'home.html')
+    return render(request, 'cityFormFill.html')
     
 def link5(request):
 	"""I'm testing the github deal I downloaded to my computer now"""
