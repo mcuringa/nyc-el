@@ -1,5 +1,9 @@
 <!--<form action - "file:///C:/Users/katyauchter"-->
 
+{% extends "base.html" %}
+
+{% block body %}
+
 <fieldset>
 	<legend>Name of City: </legend>
 	<label> Name of City: <input type = "text" name="city_name" placeholder= "Name of City"/></label>
@@ -38,6 +42,8 @@
 	<input id="ticket_cost2" type="radio" name="cost_tix" value= "false">
 		<label for="cost_tix2">$2-3 Dollars/ride</label>
 </fieldset>
+
+{%end block%}
 
 <field>
 	<legend>Number of Stations</legend>
