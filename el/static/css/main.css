@@ -112,6 +112,14 @@ footer img
     display: block;
     margin: 0 auto;
 }
+#mainWrapperDivWithBGImage {
+  background: url("\static\img\MapoftheworldWhite.jpg") no-repeat scroll 0 0 transparent;
+  height: 248px;
+  margin: 0;
+  overflow: hidden;
+  padding: 3px 0 0 3px;
+  width: 996px;
+}
 menu
 /* JS disabled styles */
 .no-js nav li:hover ul { display:block; }
