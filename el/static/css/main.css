@@ -65,7 +65,13 @@ header h2
     color: black;
     font-weight: bold;
 }
-
+#top { 
+  z-index: 2; 
+  width: 200px; 
+  line-height: 2em; 
+  background: #222222; 
+  padding: 30px; 
+} 
 
 #intro figure
 {
