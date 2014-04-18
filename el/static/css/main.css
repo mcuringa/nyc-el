@@ -65,13 +65,6 @@ header h2
     color: black;
     font-weight: bold;
 }
-#top { 
-  z-index: 2; 
-  width: 200px; 
-  line-height: 2em; 
-  background: #222222; 
-  padding: 30px; 
-} 
 
 #intro figure
 {
@@ -118,14 +111,7 @@ footer img
 {
     display: block;
     margin: 0 auto;
-}
-#top li:hover li { 
-  height:40px; 
-  margin-top:5px; 
-  margin-bottom: 5px; 
-  background: #333333; 
-  border-radius: 20px; 
-} 
+
 
 #top li li:first-of-type { 
   padding-top: 15px; 
