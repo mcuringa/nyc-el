@@ -138,3 +138,11 @@ footer img
 #top li li a:hover { 
   color:#ffffff; 
 } 
+ li { 
+  list-style: none; 
+} 
+
+a { 
+  color: orange; 
+  text-decoration: none; 
+} 
