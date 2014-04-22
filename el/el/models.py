@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-https://docs.djangoproject.com/en/dev/ref/models/fields/
->>>>>>> FETCH_HEAD
-=======
-
->>>>>>> FETCH_HEAD
 from django.db import models
 from django import forms
 from django.forms import ModelForm
@@ -33,7 +25,6 @@ class TrainForm(ModelForm):
 # the computer which column you want as the primary key
 # but usually in django you want to let django set it because pks need to be unique
 
-<<<<<<< HEAD
 class City(models.Model):
   
   name = models.CharField(max_length = 50)
@@ -44,45 +35,9 @@ class City(models.Model):
   cost_tix = models.IntegerField (default = 0) -----find decimal
   num_stations = models.IntegerField(default = 0)
   
-<<<<<<< HEAD
-  
-=======
-# This is a guess v ----- I don't really know what's up ---------------------
-
-  # storedCity = models.DateTimeField(auto_now_add= True)
-  # parent = models.pForeignKey(City)
-
-  # def storedCity(self, newCity):
-
-  #   self.name = newCity.name
-  #   self.population = newCity.population
-  #   self.square_miles = newCity.square_miles
-  #   self.square_miles_track = newCity.square_miles_track
-  #   self. avg_annual_riders = newCity.avg_annual_riders
-  #   sef.cost_tix= newCity.cost_tix
-  #   self. num_stations= newCity.num_stations
-#------------------------------------------------------------------------------------
->>>>>>> FETCH_HEAD
-  
-  
 class Stations(models.Model):
   key_facts = models.CharField(max_length=500)
   ownership = models.CharField(max_length= 500)
   percent_grwth = models.IntegerField(default = 0 )
   yr_built = models.CharField(default = 0)
-<<<<<<< HEAD
-    
-=======
-    
-# Also a guess... still don't know ------------------
 
-  # def storedStations(self, newStation):
-  #   self.key_facts = newStation.key_facts
-  #   self.ownership = newStation.ownership
-  #   self.percent_grwth = newStation.percent_grwth
-  #   self.yr_built = newStation.yr_built
-  
-#------------------------------------------------------------------------------------
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
