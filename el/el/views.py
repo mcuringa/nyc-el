@@ -1,55 +1,53 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from el.models import *
 
 
 def home(request):
     """The home page"""
-
-
-    return render(request, 'home.html')
-  
-def cityForm(request):
-    """The Form Page"""
-
-    trains = Train.objects.all()
-    context = {"trains": trains}
-    ticket_types = {1: "$0-2", 2:"$2-4", 3:">$4"}
-    context["ticket_types"]= ticket_types
+    x= 2 **16
+    context = {"math_prob": x}
         
-    return render(request, 'cityFormFill.html', context)
+    return render(request, 'home.html', context)
 
-def save_train(request):
+def link1(request):
+    """The first linked page"""
+    term = "adelphi"
+    context = {}
 
-    form= TrainForm(request.POST)
+    if term == "adelphi":
+        context["city"]= "garden city"
+        context["size"]= "15,000"
 
-    trains= form.save()
+    else:
+        context["city"] = "??"
+        context["size"] = "-1"
+    
+    return render(request, 'home.html', context)
 
-    return HttpResponseRedirect("/")
+def link2(request):
+    """The second linked page"""
+
+    userput = "soccer"
+
+    sport = {"soccer": ["red bulls", "nyc fc"], "basketball": ["knicks", "nets"]}
+
+    data = {}
+    data["sport"] = sport[userput]
+
+    return render(request, 'home.html', data)
+    
+def tokyo(request):
+    """The third linked page"""
+    """ Form for inputting City information"""
+    
+    return render(request, 'tokyo.html')
+    
+def cityForm(request):
+    """The tested linked page"""
+    
+    return render(request, 'cityFormFill.html')
     
 def link5(request):
 	"""I'm testing the github deal I downloaded to my computer now"""
 	
 	return render(request, 'home.html')
-
-#####################EXAMPLES VVVVVV ########################
-
-# def link1(request):÷
-
-# # def link2(request):
-# #     """The second linked page"""
-
-#     # userput = "soccer"
-
-#     # sport = {"soccer": ["red bulls", "nyc fc"], "basketball": ["knicks", "nets"]}
-
-#     # data = {}
-#     # data["sport"] = sport[userput]
-
-#     # return render(request, 'home.html', data)
-    
-# def tokyo(request):
-#     """The third linked page"""
-#     """ Form for inputting City information"""
-    
-#     return render(request, 'tokyo.html')

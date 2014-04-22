@@ -6,6 +6,6 @@ urlpatterns = patterns('',
     url(r'^link2$', 'el.views.link2', ),
     url(r'^tokyo$', 'el.views.tokyo', ),
     url(r'^cityForm$', 'el.views.cityForm', ),
-    url(r'^save_train$', 'el.views.save_train', ),
+    url(r'^home$', 'el.views.link5', ),
 
 )
