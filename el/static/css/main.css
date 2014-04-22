@@ -26,9 +26,16 @@ background-color:rgba(0, 0, 0, 0)
 }
 h1
 {
+<<<<<<< HEAD
+	width: 90%;
+	height: 90%%;
+	margin: 0;
+	list-style:none;
+=======
     font-weight: bold;
     font-size: 250%;
     padding-top: .25em;
+>>>>>>> FETCH_HEAD
 }
 
 
@@ -41,10 +48,19 @@ h1
 
 header
 {
+<<<<<<< HEAD
+font-family: Garamond;
+font-size: 18px;
+text-align:center;
+width: auto;
+margin: 0;
+list-style: none;
+=======
    
     border-bottom: 3px solid black;
     color: black;
 }
+>>>>>>> FETCH_HEAD
 
 header h1, header h2
 {
@@ -52,7 +68,39 @@ header h1, header h2
     text-align: center;
 }
 
+<<<<<<< HEAD
+#postcard{
+	width: 550px;
+	height: 105px;
+	margin: 0 auto;
+	background-color: black;
+	border-style: thick;
+	border-color: red;
+	list-style: none;
+
+}
+#stats{
+	width: 300px;
+	height: 85px;
+	float: left;
+	color: green;
+	background-color: yellow;
+	list-style: none;
+
+}
+#mapBox{
+	background: url("../img/mapWorld.png") no-repeat;
+	background-position: center;
+	width: 600px;
+	height: 480px;
+	margin: 0 auto;
+	list-style: none;
+}
+
+/*img.round
+=======
 header h1
+>>>>>>> FETCH_HEAD
 {
     font-family: "Urban";
     font-size: 80px;
