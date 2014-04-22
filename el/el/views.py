@@ -36,8 +36,9 @@ def link2(request):
 
     return render(request, 'home.html', data)
     
-def link3(request):
+def tokyo(request):
     """The third linked page"""
+<<<<<<< HEAD
 
     # userInput = buttonSelection  <---This is what I need to use eventually
     # This is for the test   V
@@ -111,9 +112,16 @@ def link3(request):
 
 
 def link4(request):
+=======
+    """ Form for inputting City information"""
+    
+    return render(request, 'tokyo.html')
+    
+def cityForm(request):
+>>>>>>> FETCH_HEAD
     """The tested linked page"""
     
-    return render(request, 'home.html')
+    return render(request, 'cityFormFill.html')
     
 def link5(request):
 	"""I'm testing the github deal I downloaded to my computer now"""

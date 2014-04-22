@@ -2,18 +2,101 @@
 
 {% block body %}
  
- <h1>This is the Home page for our El</h1>
+<html>
+    <head>
+	  <head>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+      <title>The EL</title>
+	  <title>By Christiana, Katy, Prem, Chris, and Jeff</title>
+      <meta charset="utf-8">
+      <link href="css/main.css" type="text/css" rel="stylesheet" />
+    </Head>
+	
+	 <header>
+            <h1>THE EL</h1>
+            <h2>Some Information About Trains from Around the World</h2>
+			<h2>By Christiana, Katy, Chris, Prem, and Jeff
+     </header>
+	<div>
+	<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5, CSS3 and jQuery Navigation menu</title>
+        <link rel="stylesheet" href="css/nav.css">
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body class="no-js">
+        <nav id="topNav">
+                <ul>
+                    <li><a href="tokyo.html" title="tokyo">tokyo</a></li>
+                <li>
+                    <a href="#" title="Nav Link 1">Nav Link 2
+                    <ul>  
+                        <li><a href="#" title="Sub Nav Link 1">Sub Nav Link 1</a></li>
+                        <li><a href="#" title="Sub Nav Link 2">Sub Nav Link 2</a></li>
+                        <li><a href="#" title="Sub Nav Link 3">Sub Nav Link 3</a></li>
+                        <li><a href="#" title="Sub Nav Link 4">Sub Nav Link 4</a></li>
+                        <li class="last"><a href="#" title="Sub Nav Link 5">Sub Nav Link 5</a></li>
+                    </ul>                
+                </li>
+                <li><a href="#" title="Nav Link 1">Nav Link 3</a></li>
+                <li><a href="#" title="Nav Link 1">Nav Link 4</a></li>
+                <li><a href="#" title="Nav Link 1">Nav Link 5</a></li>
+            </ul>
+        </nav>
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+    </body>
+</html>
+<div id="mainWrapperDivWithBGImage">
+   <div id="anotherDiv">
+      <!-- show this img behind the background image 
+      of the #mainWrapperDivWithBGImage div -->
+      <img src="/static/img/MapoftheworldWhite.jpg" />
+   </div>
+</div>
+	</div>
+	
+	
+<div class="img-wrap">
+<img src="img/northamerica.png" alt="" />
+<div class="img-overlay">
+<h4>North America</h4>
+</div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ <div>
+ <img src="/static/img/MapoftheworldWhite.jpg" alt="map of the world">
+ 
+ </div>
+ 
+ 
+ <!Katy was doing this math problem to learn how to do markers-->
  <!-- add your name to this list and then commit your changes to github -->
- /* display math results, or the FUNCTION associated with path name in VIEWS) (this is 
- assigned in the urls (i think))*/<br>
+ <!-- /* display math results, or the FUNCTION associated with path name in VIEWS) (this is  -->
+ <!-- assigned in the urls (i think))*/<br> -->
 
 
- Math problem {{math_prob}}<br>
+ <!-- Math problem {{math_prob}}<br> -->
 
 
- City of college: {{city}}<br>
-Population of College: {{size}}<br>
+<!-- <!--  City of college: {{city}}<br> -->
+<!-- Population of College: {{size}}<br> --> -->
 
+<<<<<<< HEAD
 <h4> Sports Problems </h4>
 
 <br>
@@ -122,25 +205,29 @@ CheckCheck = {{data}}<br> <br>
           stroke: '#555',
           strokeWidth: 1
         });
+=======
+<!-- <ul>
+{% for team in sport %}
+  <li>{{ team }}</li>    
+{% endfor %}
+</ul>
 
-        path.on('mouseover', function() {
-          this.setFill('#111');
-          this.moveTo(topLayer);
-          topLayer.drawScene();
-        }); 
+<br> -->
 
-        path.on('mouseout', function() {
-          this.setFill('#eee');
-          this.moveTo(mapLayer);
-          topLayer.draw();
-        });
+<!-- Basketball Team = {{basketball}}
+(put in the key to display the variable) -->
+>>>>>>> FETCH_HEAD
 
-        mapLayer.add(path);
-      }
+ 
 
-      stage.add(mapLayer);
-      stage.add(topLayer);
 
+
+
+<<<<<<< HEAD
     </script>
   </body>
 </html-->
+=======
+</html>
+{% endblock %}
+>>>>>>> FETCH_HEAD
