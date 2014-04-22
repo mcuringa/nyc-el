@@ -1,52 +1,167 @@
-<!--<form action - "file:///C:/Users/katyauchter"-->
-
+<!DOCTYPE html>
 {% extends "base.html" %}
 
 {% block body %}
 
-<fieldset>
-	<legend>Name of City: </legend>
-	<label> Name of City: <input type = "text" name="city_name" placeholder= "Name of City"/></label>
-</fieldset>
+<head>
+<title> Train Chart </title>
+<meta charset="utf-8">
+<style type="text/css">
+
+body
+{
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+
+}
+ul{
+	list-style: none;
+}
+
+table
+{
+/*	border-collapse: collapse;
+*/	width: 100%;
+	line-height: 1.5em;
+	margin-top: 1em;
+}
+
+th
+{
+	background: black;
+	color:white;
+	font-weight: bold;
+	text-align: left;
+
+}
 
 
-<fieldset>
-	<legend> Population</legend>
-	<label> City Population: <input type ="text" name= "citypop" placeholder= "Population of City"/></label>
-</fieldset>
+#background2{
+	background-color: rgba(255,255,255,.65);
+	padding: 2px;
+	padding-top: 2px;
+	margin-top: 2px;
+}
 
+label
+{
+	display: block;
+	float: left;
+	padding-right: 0.5em;
+	text-align: right;
+	width: 150px;
 
-<fieldset>
-	<legend>Square Miles of City</legend>
-	<label> Square Miles of City: <input type = "text" name= "miles_of_city" placeholder= "Sq mi of city"/></label>
+}
 
-</fieldset>
+input[type="text"]
+{
+	width: 400px;
+}
 
+input[type="radio"]
+{
+	float: left;
+	margin: 2px;
+}
+.station-list{
+	background-color: white;
+	width: auto;
+	height: auto;
+}
 
-<field>
-	<legend>Square Miles Track</legend>
-	<label> Square Miles Track <input type= "text" name="squaremiles" placeholder="Track Mileage"/></label>
-</field>
+</style>
+</head>
 
+<body>
+<section id="Train info - editor">
+	<h3>The City Info Getter </h3>
+	<form name="TrainForm" action="/save_train" method="post">
+        {% csrf_token %}
 
-<field>
-	<legend> Average Annual Riders</legend>
-	<label> Average Annual Riders <input type= "int" name="average riders" placeholder= "Average Riders per Year"/></label>
-</field>
+		<fieldset>
+			<div id="background2">
+			<legend>Location Info</legend>
+			<p><label> Name of City: </label><input type = "text" name="city_name" placeholder= "Name of City"></p>
 
+			<p><label> City Population: </label><input type ="int" name= "citypop" placeholder= "Population of City"></p>
 
-<field>
+			<p><label> Sq. Miles of City:</label> <input type="int" name="miles_of_city" placeholder= "Sq mi of city"></p>
+		</div>
+		</fieldset>
+		<fieldset>
+			<div id="background2">
+			<legend> Train Info </legend>
+			<ul>
+
+			<li><label>Number of Stations</label> <input type="int" name="numb_stations" placeholder= "# of stations"></li>
+
+			<br><br>
+			
+			<li><label> Square Miles Track</label> <input type= "int"  name="track_miles"placeholder="Track Mileage"/></li>
+
+			<br><br>
+			
+			<li><label> Average Annual Riders </label><input type= "int" placeholder= "Average Riders per Year" name="riders_per_yr"/></li><br>
+
+			<br><br>
+
+			<li><label>Key Facts</label><input type "text" name="key_facts"></li><br>
+
+			<hr>
+		</div>
+
+		</ul>
+		<div id="background2">
+
+			<label>Cost Tix: </label><br>
+
+			{%for tick_id, tick_type in ticket_types.items%}
+			<ul>
+    		<li><input type="radio" name="cost_tix" value="{{tick_id}}">{{tick_type}}</li>
+    		</ul>
+			{%  endfor %}
+							
+	
+		
+		</div>
+
+		</fieldset>
+
+		        <p><input type="submit" value="save"></p>
+</section>
+
+<!-- saving this v in case i got it wrong ^ up there
 	<legend>Cost Tix: </legend>
 	<input id="ticket_cost1" type="radio" name="cost_tix" value="true">
 		<label for="cost_tix1">$0-1 Dollars/ride</label>
 	<input id="ticket_cost2" type="radio" name="cost_tix" value= "false">
 		<label for="cost_tix2">$2-3 Dollars/ride</label>
-</fieldset>
+ -->
 
-{%end block%}
+<section id="station-list">
+	<div id="background2">
+	<h3>Stations on the Map</h3>
+	<table>
+		<tr><th>City</th><th>Pop</th><th>City-sq.mi</th><th>#stations</th><th>Track-sq.mi</th><th>AvgRiders/yr</th><th>key_facts</th><th>TixCost</th></tr>
+			{% for train in trains %}
+				<tr>
+					<td><em>{{train.city_name}}</em></td>
+					<td><em>{{train.citypop}}</em></td>
+					<td><em>{{train.miles_of_city}}</em></td>
+					<td><em>{{train.numb_stations}}</em></td>
+					<td><em>{{train.track_miles}}</em></td>
+					<td><em>{{train.riders_per_yr}}</em></td>
+					<td><em>{{train.key_facts}}</em></td>
+					<td><em>{{train.cost_tix}}</em></td>
+				</tr>
+			{% endfor %}
+	</table>
+</div>
+</section>
+</body>
+</html>
 
-<field>
-	<legend>Number of Stations</legend>
-	<input id=""
-</field>
+
+{%endblock%}
 
