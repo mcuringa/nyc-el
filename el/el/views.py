@@ -26,10 +26,9 @@ def save_train(request):
     trains= form.save()
 
 
-    return render(request, 'home.html', data)
+ return HttpResponseRedirect("/")
     
-def tokyo(request):
-    """The third linked page"""
+
 
 
 
