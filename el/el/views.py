@@ -25,8 +25,7 @@ def save_train(request):
 
     trains= form.save()
 
-
- return HttpResponseRedirect("/")
+    return HttpResponseRedirect("/")
     
 
 
