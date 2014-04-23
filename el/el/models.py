@@ -9,7 +9,7 @@ class Train(models.Model):
   miles_of_city = models.IntegerField(default = 0, blank=True)
   track_miles = models.IntegerField(default = 0, blank=True)
   riders_per_yr = models.IntegerField(default = 0, blank=True)
-  cost_tix = models.IntegerField()
+  cost_tix = models.IntegerField(default=0, blank=True)
   key_facts = models.CharField(max_length = 500, blank=True)
   numb_stations = models.IntegerField(default = 0, blank=True)
 
@@ -24,20 +24,4 @@ class TrainForm(ModelForm):
 #primary key means whatever column you want to search by -- you can tell 
 # the computer which column you want as the primary key
 # but usually in django you want to let django set it because pks need to be unique
-
-class City(models.Model):
-  
-  name = models.CharField(max_length = 50)
-  population = models.IntegerField(default = 0)
-  square_miles = models.IntegerField(default = 0)
-  square_miles_track = models.IntegerField(default = 0)
-  avg_annual_riders = models.IntegerField(default = 0)
-  cost_tix = models.IntegerField (default = 0) -----find decimal
-  num_stations = models.IntegerField(default = 0)
-  
-class Stations(models.Model):
-  key_facts = models.CharField(max_length=500)
-  ownership = models.CharField(max_length= 500)
-  percent_grwth = models.IntegerField(default = 0 )
-  yr_built = models.CharField(default = 0)
 
