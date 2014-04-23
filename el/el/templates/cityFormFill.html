@@ -1,5 +1,9 @@
 <!--<form action - "file:///C:/Users/katyauchter"-->
 
+{% extends "base.html" %}
+
+{% block body %}
+
 <fieldset>
 	<legend>Name of City: </legend>
 	<label> Name of City: <input type = "text" name="city_name" placeholder= "Name of City"/></label>
@@ -14,14 +18,14 @@
 
 <fieldset>
 	<legend>Square Miles of City</legend>
-	<label> Square Miles of City: <input type = "text" name= "miles_of_city" placeholder= "Sq mi of city"/> </label>
+	<label> Square Miles of City: <input type = "text" name= "miles_of_city" placeholder= "Sq mi of city"/></label>
 
 </fieldset>
 
 
 <field>
 	<legend>Square Miles Track</legend>
-	<label> Square Miles Track <input type= "text" name="squaremiles" placeholder= "Track Mileage"/></label>
+	<label> Square Miles Track <input type= "text" name="squaremiles" placeholder="Track Mileage"/></label>
 </field>
 
 
@@ -38,6 +42,8 @@
 	<input id="ticket_cost2" type="radio" name="cost_tix" value= "false">
 		<label for="cost_tix2">$2-3 Dollars/ride</label>
 </fieldset>
+
+{%end block%}
 
 <field>
 	<legend>Number of Stations</legend>
