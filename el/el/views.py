@@ -25,12 +25,12 @@ def save_train(request):
 
     trains= form.save()
 
-<<<<<<< HEAD
+
     return render(request, 'home.html', data)
     
 def tokyo(request):
     """The third linked page"""
-<<<<<<< HEAD
+
 
     # userInput = buttonSelection  <---This is what I need to use eventually
     # This is for the test   V
