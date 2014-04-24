@@ -12,7 +12,7 @@ def home(request):
 def cityForm(request):
     """The Form Page"""
 
-    trains = Train.objects.all()
+    trains = Train.objects.all()[0]
     context = {"trains": trains}
     ticket_types = {1: "$0-2", 2:"$2-4", 3:">$4"}
     context["ticket_types"]= ticket_types
