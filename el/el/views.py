@@ -12,7 +12,7 @@ def home(request):
 def cityForm(request):
     """The Form Page"""
 
-    trains = Train.objects.all()[0]
+    trains = Train.objects.all()
     context = {"trains": trains}
     ticket_types = {1: "$0-2", 2:"$2-4", 3:">$4"}
     context["ticket_types"]= ticket_types
@@ -28,7 +28,11 @@ def save_train(request):
     return HttpResponseRedirect("/")
     
 
+def europe (request):
+    """The Europe page"""
 
+
+    return render(request, 'europe.html')
 
 
 
