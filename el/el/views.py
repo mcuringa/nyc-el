@@ -28,7 +28,11 @@ def save_train(request):
     return HttpResponseRedirect("/")
     
 
+def europe (request):
+    """The Europe page"""
 
+
+    return render(request, 'europe.html')
 
 
 

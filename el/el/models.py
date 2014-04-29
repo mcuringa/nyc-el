@@ -4,14 +4,16 @@ from django.forms import ModelForm
 
 class Train(models.Model):
 
-  city_name = models.CharField(max_length = 50)
-  citypop = models.IntegerField(default = 0, blank=True)
-  miles_of_city = models.IntegerField(default = 0, blank=True)
-  track_miles = models.IntegerField(default = 0, blank=True)
-  riders_per_yr = models.IntegerField(default = 0, blank=True)
+  city_name = models.CharField(max_length=50)
+  citypop = models.IntegerField(default=0, blank=True)
+  miles_of_city = models.IntegerField(default=0, blank=True)
+  system_length = models.IntegerField(default=0, blank=True)
+  riders_per_yr = models.IntegerField(default=0, blank=True)
   cost_tix = models.IntegerField(default=0, blank=True)
-  key_facts = models.CharField(max_length = 500, blank=True)
-  numb_stations = models.IntegerField(default = 0, blank=True)
+  key_facts = models.CharField(max_length=500, blank=True)
+  numb_stations = models.IntegerField(default=0, blank=True)
+  year_opened = models.IntegerField(default=0, blank=True)
+  
 
 
 class TrainForm(ModelForm):
