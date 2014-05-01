@@ -1,16 +1,38 @@
-	<!DOCTYPE html>
-+<!DOCTYPE html>
- +<html lang="en">
- +<head>
- +    <title>{% block title %}The El- Transportation Around the World{% endblock %}</title>
- +    <meta charset="utf-8" />
- +    <link href="/static/css/main.css" type="text/css" rel="stylesheet">
- +</head>
- +
- +<body>
- +    {% block body %}Here is Content that We're adding to the Body{% endblock %}
- +</body>
- +
+<!DOCTYPE html>
+
+ <html lang="en">
+ <head>
+     <title>{% block title %}The El- Transportation Around the World{% endblock %}</title>
+     <meta charset="utf-8" />
+     <link href="/static/css/main.css" type="text/css" rel="stylesheet">
+ </head>
+
+    {% block nav %}
+     And this is within the nav block (body)
+    <body class="no-js">
+        <nav id="topNav">
+            <ul>     
+                <li><a href="home" title="Home">Home</a></li>
+                <li><a href="cityForm" title="Nav Link 1">Trainfo Form</a></li>
+                <li><a href="/2/view" title="Nav Link 3">New York</a></li>
+                <li><a href="/3/view" title="Nav Link 4">Chicago</a></li>
+                <li><a href="/4/view" title="Nav Link 5">London</a></li>
+            </ul>
+        </nav>
+        <style>
+        {% block css %}
+        {% endblock %}
+        </style>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/modernizr.js"></script>
+    {% endblock %}  
+
+     {% block body %}
+
+     {% endblock %}
+</body>
+
  +</html>
 	
 	

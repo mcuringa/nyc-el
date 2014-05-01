@@ -1,12 +1,6 @@
-<!DOCTYPE html>
 {% extends "base.html" %}
 
-{% block body %}
-
-<head>
-<title> Train Chart </title>
-<meta charset="utf-8">
-<style type="text/css">
+{% block css %}
 
 body
 {
@@ -70,11 +64,11 @@ input[type="radio"]
 	height: auto;
 }
 
-</style>
-</head>
+{% endblock %}
 
-<body>
-<section id="Train info - editor">
+
+ {% block body %}
+ <section id="Train info - editor">
 	<h3>The City Info Getter </h3>
 	<form name="TrainForm" action="/save_train" method="post">
         {% csrf_token %}
@@ -112,6 +106,8 @@ input[type="radio"]
 
 			<li><label>Key Facts</label><input type="text" name="key_facts"></li><br>
 
+
+
 			<hr>
 		</div>
 
@@ -135,19 +131,11 @@ input[type="radio"]
 		        <p><input type="submit" value="save"></p>
 </section>
 
-<!-- saving this v in case i got it wrong ^ up there
-	<legend>Cost Tix: </legend>
-	<input id="ticket_cost1" type="radio" name="cost_tix" value="true">
-		<label for="cost_tix1">$0-1 Dollars/ride</label>
-	<input id="ticket_cost2" type="radio" name="cost_tix" value= "false">
-		<label for="cost_tix2">$2-3 Dollars/ride</label>
- -->
-
 <section id="station-list">
 	<div id="background2">
 	<h3>Stations on the Map</h3>
 	<table>
-		<tr><th>City</th><th>Pop.</th><th>City Sq.Mi</th><th>Year Opened</th><th># of Stations</th><th>System Length Km</th><th>Avg Riders/yr</th><th>Key Facts</th><th>Cost Tix</th></tr>
+		<tr><th>City</th><th>Pop.</th><th>City Sq.Mi</th><th>Year Opened</th><th># of Stations</th><th>System Length Km</th><th>Avg Riders/yr</th><th>Key Facts</th><th>Cost Tix</th><th>PK</th></tr>
 		
 			{% for train in trains %}
 				<tr>
@@ -160,15 +148,11 @@ input[type="radio"]
 					<td><em>{{train.riders_per_yr}}</em></td>
 					<td><em>{{train.key_facts}}</em></td>
 					<td><em>{{train.cost_tix}}</em></td>
+					<td><em>{{train.pk}}</em></td>
 				</tr>
 			{% endfor %}
 			
 			</table>
 </div>
 </section>
-</body>
-</html>
-
-
-{%endblock%}
-
+ {% endblock %}

@@ -6,7 +6,12 @@ from el.models import *
 def home(request):
     """The home page"""
 
-
+    # city=Train.objects.all()
+    # context={"train":train}
+    # city_type= {1: "New York", 2:"Chicago", 3:"London"}
+    # context["city_type"]= city_type
+    # context["pk"]=0
+    
     return render(request, 'home.html')
   
 def cityForm(request):
@@ -16,6 +21,8 @@ def cityForm(request):
     context = {"trains": trains}
     ticket_types = {1: "$0-2", 2:"$2-4", 3:">$4"}
     context["ticket_types"]= ticket_types
+    context["pk"] = 0
+
         
     return render(request, 'cityFormFill.html', context)
 
@@ -33,6 +40,15 @@ def europe (request):
 
 
     return render(request, 'europe.html')
+
+def infoDisplayer (request, pk):
+    """The "postcard" with information on it."""
+
+    train = Train.objects.get(pk=pk)
+
+    context= {"train": train}
+
+    return render(request, "infoDisplayer.html", context)
 
 
 
