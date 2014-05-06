@@ -13,7 +13,7 @@ class Train(models.Model):
   key_facts = models.CharField(max_length=500, blank=True)
   numb_stations = models.IntegerField(default=0, blank=True)
   year_opened = models.IntegerField(default=0, blank=True)
-  # city= models.IntegerField(default=0, blank=True)
+
   
 
 

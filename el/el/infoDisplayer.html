@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block body %}
+
+
+
+<head>
+<title> {{train.id}}</title>
+<meta charset="utf-8">
+<style type="text/css">
+        <input type="hidden" name="pk" value="{{pk}}">
+         {% csrf_token %}
+
+
+</style>
+</head>
+
+<body>
+<section id = "trainfo">
+<h3> {{train.city_name}} Transit Information </h3>
+
+
+
+<p>
+{{train.city_name}} is {{train.miles_of_city}} with a population of {{train.city_pop}}.
+
+There are {{train.numb_stations}} stations in the city, and {{train.riders_per_yr}} riders annually.
+
+Tickets cost {{train.tick_id}}, and the transit system is {{train.system_length}} miles long.</p>
+
+</body>

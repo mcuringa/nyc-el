@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block body %}
+
+
+
+<head>
+<title> {{train.id}}</title>
+<meta charset="utf-8">
+<style type="text/css">
+
+#trainfo
+{
+	margin: 0, auto;
+}
+
+#postcard
+{
+	background-image:('/static/img/pc.png/');
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.box_left
+{
+	background: yellow;
+	width: 300px;
+	height: auto;
+	text-align: left;
+	float: left;
+	padding: 2px, 2px;
+}
+
+.box_right
+{
+	background: blue;
+	width: 300px;
+	height: auto;
+	text-align: left;
+	float: left;
+	padding: 2px, 2px;
+	margin-left: 2px;
+}
+
+</style>
+</head>
+
+<body>
+<section id = "trainfo">
+<h3> {{train.city_name}} Transit Information </h3>
+
+<div id="postcard">
+	<div class="box_left">
+<h3>{{train.city_name}}</h3> <br>
+<hr>
+size: {{train.miles_of_city}} square miles <br> 
+<hr>
+population: {{train.city_pop}} people<br> 
+	</div>
+
+	<div class="box_right">
+transit stations: {{train.numb_stations}} stations<br>
+<hr> 
+riders per year: {{train.riders_per_yr}} riders<br> 
+<hr>
+Tickets cost: $ {{train.tick_id}}<br> 
+<hr>
+transit size: {{train.system_length}} square miles<br> 
+	</div>
+</div> 
+
+<div class="img-wrap">
+<img src="/static/img/world.png" alt="" />
+<div class="img-overlay">
+</div>
+
+</body>
+
+{% endblock %}
