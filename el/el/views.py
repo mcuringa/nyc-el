@@ -14,7 +14,7 @@ def home(request):
     
     return render(request, 'home.html')
   
-def cityForm(request):
+def cityFormFill(request):
     """The Form Page"""
 
     trains = Train.objects.all()
