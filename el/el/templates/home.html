@@ -1,8 +1,20 @@
 {% extends "base.html" %}
 
  {% block body %}
-        <div class="img-wrap">
+
+
+
+
+ <section id="city_list">
+ 	<h3> Train Cities</h3>
+
+ 	{% for train in cities %}
+ 		<a href="/cities/{{train.id}}">{{train.city_name}}</a><br>
+ 	{% endfor %}
+ </section>
+         <div class="img-wrap">
             <img src="/static/img/world.png" alt="" />
             <div class="img-overlay">
         </div>
+
  {% endblock %}

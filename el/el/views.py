@@ -6,13 +6,16 @@ from el.models import *
 def home(request):
     """The home page"""
 
+    cities = Train.objects.all()
+
+    context={"cities": cities}
     # city=Train.objects.all()
     # context={"train":train}
     # city_type= {1: "New York", 2:"Chicago", 3:"London"}
     # context["city_type"]= city_type
     # context["pk"]=0
     
-    return render(request, 'home.html')
+    return render(request, 'home.html', context)
   
 def cityFormFill(request):
     """The Form Page"""

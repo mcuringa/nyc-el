@@ -5,8 +5,8 @@ urlpatterns = patterns('',
     url(r'^home$', 'el.views.home', ),
     url(r'^cityForm$', 'el.views.cityFormFill', ),
     url(r'^save_train$', 'el.views.save_train', ),
-    url(r'^(?P<pk>[0-9]+?)/view[/]$', 'el.views.infoDisplayer', ),
-
-
+	url(r'^cities/([0-9]?)[/]$', 'el.views.infoDisplayer'),
+	url(r'^(?P<pk>[0-9]+?)/view[/]$', 'el.views.infoDisplayer', ),
+	url(r'^(?P<pk>[0-9]+?)/cities[/]$', 'el.views.infoDisplayer', ),
 
 )
