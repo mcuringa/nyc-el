@@ -39,10 +39,10 @@ h1
 }
 
 
-{
+/* {
     color: #blue;
     text-decoration: none;
-}
+} */
 
 
 
@@ -79,13 +79,13 @@ header h1, header h2
 	list-style: none;
 
 }
-#stats{
+/* #stats{
 	width: 300px;
 	height: 85px;
 	float: left;
 	color: green;
 	background-color: yellow;
-	list-style: none;
+	list-style: none; */
 
 }
 #mapBox{
