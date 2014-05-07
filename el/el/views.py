@@ -25,14 +25,7 @@ def cityFormFill(request):
 
         
     return render(request, 'cityFormFill.html', context)
-
-def save_train(request):
-
-    form= TrainForm(request.POST)
-
-    trains= form.save()
-
-    return HttpResponseRedirect("/")
+    
     
 
 def europe (request):
@@ -49,6 +42,8 @@ def infoDisplayer (request, pk):
     context= {"train": train}
 
     return render(request, "infoDisplayer.html", context)
+
+
 
 
 
