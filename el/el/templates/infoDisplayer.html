@@ -1,32 +1,46 @@
-<!DOCTYPE html>
 {% extends "base.html" %}
 
-{% block body %}
-
-
-<head>
-<title> {{train.id}}</title>
-<meta charset="utf-8">
+{% block css %}
 <style type="text/css">
 
 #trainfo
 {
 	margin: 0, auto;
 }
+
 #postcard
 {
-	background-image: url("/static/img/pc2.png");
-	width: 500px;
-	height: 325px;
+	background-image:('/static/img/pc.png');
+	width: 700px;
+	height: auto;
 	margin: 0 auto;
 }
 
+/*.box_left
+{
+	background: yellow;
+	width: 300px;
+	height: auto;
+	text-align: left;
+	float: left;
+	padding: 2px, 2px;
+}
 
+.box_right
+{
+	background: blue;
+	width: 300px;
+	height: auto;
+	text-align: left;
+	float: left;
+	padding: 2px, 2px;
+	margin-left: 2px;*/
+}
 
 </style>
-</head>
+{% endblock %}
 
-<body>
+{% block body %}
 <section id = "trainfo">
 <h3> {{train.city_name}} Transit Information </h3>
 
@@ -44,9 +58,16 @@ transit stations: {{train.numb_stations}} stations<br>
 <hr> 
 riders per year: {{train.riders_per_yr}} riders<br> 
 <hr>
-Tickets cost: $ {{train.tick_id}}<br> 
+Tickets cost: $ {% if train.cost_tix == 1 %}
+Low Cost
+{% elif train.cost_tix == 2 %}
+Medium Cost
+{% else %}
+High Cost
+{% endif %}
+<br> 
 <hr>
-transit size: {{train.system_length}} square miles<br> 
+transit size: {{train.system_length}}s square miles<br> 
 	</div>
 </div> 
 
@@ -54,7 +75,5 @@ transit size: {{train.system_length}} square miles<br>
 <img src="/static/img/world.png" alt="" />
 <div class="img-overlay">
 </div>
-
-</body>
 
 {% endblock %}
