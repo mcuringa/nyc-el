@@ -2,16 +2,9 @@
 
  {% block body %}
 
-
-
-
- <section id="city_list">
- 	<h3> Train Cities</h3>
-
- 	{% for train in cities %}
- 		<a href="/cities/{{train.id}}">{{train.city_name}}</a><br>
- 	{% endfor %}
- </section>
+ <center><h1>WELCOME TO THE EL</h1></center>
+<center><h2>This website is dedicated to the Railroads, and the information about them.</h2></center>
+<center><h3>Creators: Katy, Christiana, Christian, Jeff and Prem</h3></center> 
 
 
  <section id="searchbar">
@@ -23,10 +16,17 @@
  		<input type="submit" value="submit">
  	</fieldset>
  </form>
- 
- <center><h1>WELCOME TO THE EL</h1></center>
-<center><h2>This website is dedicated to the Railroads, and the information about them.</h2></center>
-<center><h3>Creators: Katy, Christiana, Christian, Jeff and Prem</h3></center> 
+ <br>
+ <br>
+ <br>
+
+ <section id="city_list">
+ 	<h3> Train Cities</h3>
+
+ 	{% for train in cities %}
+ 		<a href="/cities/{{train.id}}">{{train.city_name}}</a><br>
+ 	{% endfor %}
+ </section>
 
 
          <div class="img-wrap">
