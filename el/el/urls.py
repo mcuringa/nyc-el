@@ -8,5 +8,6 @@ urlpatterns = patterns('',
 	url(r'^cities/([0-9]?)[/]$', 'el.views.infoDisplayer'),
 	url(r'^(?P<pk>[0-9]+?)/view[/]$', 'el.views.infoDisplayer', ),
 	url(r'^(?P<pk>[0-9]+?)/cities[/]$', 'el.views.infoDisplayer', ),
+	url(r'^search$', 'el.views.search', ),
 
 )

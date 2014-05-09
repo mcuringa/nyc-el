@@ -52,6 +52,20 @@ def infoDisplayer (request, pk):
 
     return render(request, "infoDisplayer.html", context)
 
+def search (request):
+    search_param=request.POST
+    user_search = search_param["search"]
+    if user_search:
+        train = Train.objects.get(city_name=user_search)
+        if train:
+            url = "/cities/" + str(train.pk)
+            return HttpResponseRedirect(url)
+        else:
+            return render(request, "home.html", context)
+    else:
+        return render(request, "home.html", context)
+
+
 
 
 
