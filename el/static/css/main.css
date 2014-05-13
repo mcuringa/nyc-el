@@ -116,7 +116,7 @@ header h1, header h2
     width: 475px;
     height: 325px;
     margin: 0 auto;
-    padding-left: 2px;
+    padding-left: .25em;
     padding-top: .25em;
 
 
