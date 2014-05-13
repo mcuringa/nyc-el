@@ -104,6 +104,23 @@ header h1, header h2
     text-align: center;
 }
 
+#trainfo
+{
+    margin: 0 auto;
+   
+}
+#postcard
+{
+    background-image: url("/static/img/pc2.png");
+    width: 475px;
+    height: 325px;
+    margin: 0 auto;
+    padding-left: .30em;
+    padding-top: .25em;
+
+}
+
+
 /*img.round
 =======
 header h1
