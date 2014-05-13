@@ -26,16 +26,16 @@ background-color:rgba(0, 0, 0, 0)
 }
 h1
 {
-<<<<<<< HEAD
+
 	width: 90%;
 	height: 90%%;
 	margin: 0;
 	list-style:none;
-=======
+
     font-weight: bold;
     font-size: 250%;
     padding-top: .25em;
->>>>>>> FETCH_HEAD
+
 }
 
 
@@ -48,19 +48,18 @@ h1
 
 header
 {
-<<<<<<< HEAD
+
 font-family: Garamond;
 font-size: 18px;
 text-align:center;
 width: auto;
 margin: 0;
 list-style: none;
-=======
+
    
     border-bottom: 3px solid black;
     color: black;
 }
->>>>>>> FETCH_HEAD
 
 header h1, header h2
 {
@@ -68,7 +67,6 @@ header h1, header h2
     text-align: center;
 }
 
-<<<<<<< HEAD
 #postcard{
 	width: 550px;
 	height: 105px;

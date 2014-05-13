@@ -1,0 +1,58 @@
+FILTERSS::::
+
+school.objects.get 
+
+id=
+
+
+school.objects.filter(is_public=True)   <-----put it in views
+
+
+school.objects.filter(is_public=True).exclude(loc_type=1).filter(gender=True)
+
+schools.filter(name="adelphi")
+
+
+input type="radio" name="length" value="1" id= "two_year"> filter(four_year=True)
+
+input type="radio" name="length" value="2" id="four_year"> filter(four_year=False)
+
+input type="radio" name="length" value="3" id="both"> filter()
+
+
+-------
+in View
+
+view.py
+
+Form method="post"
+
+def college_search(request):
+
+search_params= request.POST
+
+schools= school.objects.all()
+
+if search_params["length"]
+
+if int(search_params["length"]) == 1:
+
+schools = schools.filter(is_four_year=True)  ### filtered by column in the data base
+
+elif int(search_params["length"]) ==2:
+
+schools: schools.filter(is_four_year=False)  ### filtered by same column
+
+
+if int(search_params["public"])== 1: 
+
+radio buttons where only one thing can be true: Radio buttons (bolean)
+
+
+Checkboxes:  not the same name anymore:
+
+GENDER
+
+all boys / all girls/  coed
+
+
