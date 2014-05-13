@@ -65,6 +65,7 @@ def search (request):
     else:
         return render(request, "home.html", context)
 
+def get_ticket_msg(
 
 
 

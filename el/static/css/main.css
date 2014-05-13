@@ -107,6 +107,7 @@ header h1, header h2
 #trainfo
 {
     margin: 0 auto;
+    padding-left: 2px;
    
 }
 #postcard
@@ -115,8 +116,10 @@ header h1, header h2
     width: 475px;
     height: 325px;
     margin: 0 auto;
-    padding-left: .30em;
+    padding-left: 2px;
     padding-top: .25em;
+
+
 
 }
 
