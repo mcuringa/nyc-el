@@ -65,16 +65,16 @@ def search (request):
     else:
         return render(request, "home.html", context)
 
-def get_ticket_msg(
 
 
 
 
 
 
-#####################EXAMPLES VVVVVV ########################
 
-# def link1(request):÷
+####################EXAMPLES VVVVVV ########################
+
+
 
 # # def link2(request):
 # #     """The second linked page"""
